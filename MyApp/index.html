@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="child-div">
+            <figure>
+                <img src="/MyApp/todoImg.png" alt="todo-logo">
+                <figcaption>
+                    <h2>Add Your List Here ✌</h2>
+                </figcaption>
+            </figure>
+            <div class="addItem">
+                <input type="text" placeholder="Enter item" id="input" /><span>
+                    <i class="fa-solid fa-plus add-item" id="btn" onclick="addItem()"></i>
+                </span>
+            </div>
+            <!-- show our items -->
+            <div class="showItems">
+                <div class="eachItem">
+                    <div id="ol" class="items">
+                        <li>Apple <span> <i class="fa-regular fa-pen-to-square edit-btn" id="editbtn"
+                                    onchange="editBtn"></i></span> <span><i
+                                    class="fa-solid fa-trash-can del-btn"></i></span></li>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+
+    let editItem = document.getElementById('editbtn');
+    function addItem() {
+        let inputValue = document.getElementById('input').value;
+        let items = [];
+        items.push(inputValue)
+        let Lists = document.getElementById('ol');
+        let Li = document.createElement('li');
+        Lists.appendChild(Li);
+        Li.innerHTML = items + editItem;
+
+    }
+    // edit button 
+    const editBtn = () => {
+
+
+    }
+</script>
+
+</html>
+<!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css -->

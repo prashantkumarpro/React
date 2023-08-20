@@ -1,0 +1,12 @@
+li{
+    font-size: 2rem;
+    text-align: left;
+}
+#btn{
+    padding: 3px 12px;
+    background-color: aqua;
+    color: Red;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+}

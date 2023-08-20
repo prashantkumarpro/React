@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: white;
+    background-color: #1e749c;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    ;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.nav h2 {
+    font-size: 2rem;
+}
+
+.user-input {
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input {
+    border: 1px solid lightgray;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.user-input input:focus {
+    box-shadow: 0 0 5px #2d708f;
+    border: 1px solid #2d708f;
+}
+
+.user-input .add-btn {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    padding: 8px;
+    margin-left: -30px;
+    color: #1e749c;
+    font-size: 2rem;
+}
+
+.to-do-items {
+    width: 450px;
+    margin: auto;
+
+}
+
+.item {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 10px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.item-btn i {
+    display: inline-block;
+    padding: 1px 2px;
+    margin: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+#btn-remove-all{
+    width: 250px;
+    margin: auto;
+    
+
+}
+#remove-all{
+    background-color: white;
+    width: 100%;
+    border-radius: 2px;
+    padding: 10px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+#remove-all:hover{
+    background-color: #ee0c0c;
+    color: white;
+}
+
+@media(max-width:768px) {
+    .nav {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav h2 {
+        margin: 10px 0;
+    }
+
+    .user-input {
+        width: 100%;
+    }
+
+    .to-do-items {
+        width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    .user-input input {
+        width: 74%;
+    }
+}
+
+@media(max-width:320px) {
+    .user-input input {
+        width: 60%;
+    }
+}
